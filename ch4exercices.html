@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+    
+    var intValue;
+
+    while ((intValue = prompt("Enter the times table",1)) != -1) {
+        while (isNaN(intValue)==true) {
+            intValue = prompt(intValue + 
+            "is not a valid number, plz retry",1);
+        }
+        if (intValue == -1) {
+            break;
+        }
+    }
+
+
+  
+    function timesTable(intValue,start,end) {
+    
+    for(; start <= end; start++) {
+    document.write(intValue + " * " +
+    start + " = " +
+    start * intValue + "<br />");
+    }
+    }
+
+
+    </script>
+</body>
+
+</html>

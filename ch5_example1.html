@@ -1,0 +1,34 @@
+<html lang="en">
+
+<head>
+    <title></title>
+</head>
+
+<body>
+    <script>
+
+    var myString = "Welcome to Johns services. " +
+    "Johns website is www.john.com. " + 
+    "Visit Johns website today, thanks";
+
+    document.write(myString + "<br/>");
+
+    var foundAtPosition = 0;
+    var johnsCount = 0;
+
+    while (foundAtPosition != -1){
+        foundAtPosition = myString.indexOf("Johns",foundAtPosition);
+
+        if (foundAtPosition != -1) {
+            johnsCount++; 
+            foundAtPosition++;
+        }
+    }
+
+    document.write("There are " + johnsCount + " occurences of Johns");
+
+
+    </script>
+</body>
+
+</html>

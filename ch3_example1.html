@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+    <title>Chapter 3, Exercise 1</title>
+</head>
+
+<body>
+    <script>
+        
+    var degF = parseInt(prompt("Enter degrees in F ", 32), 10);
+    var degC = 5/9 * (degF - 32);
+
+    document.write(degF + "\xB0 Fahrenheit is " + degC + " in celcius <br/>");
+    
+    if (degC <= 0) {
+        document.write("We freezin out here");
+    }
+
+    if (degC >= 100) {
+        document.write("boiling");
+    }
+
+    </script>
+</body>
+
+</html>
